@@ -9,8 +9,8 @@ function App() {
   const [num2, setNum2] = useState("");
 
   const addNumber = () => {
-    setNum1(parseInt(display))
-    setDisplay("")
+    setNum1(parseInt(display));
+    setDisplay("");
   };
   const handleClick = (e) => {
     setDisplay((prev) => {
@@ -18,9 +18,7 @@ function App() {
     });
     console.log(typeof e.target.textContent);
   };
-  const calculate =() => {
-
-  }
+  const calculate = () => {};
 
   // show output
   return (
