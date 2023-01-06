@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import { CalcButton } from "./component/CalcButton";
+import FormInput from "./component/CalcInput";
 
 function App() {
+  const [display, setDisplay] = useState(0);
+
+  const addNumber = () => {};
+  const handleClick = (e) => {
+    setDisplay((prev) => {
+
+      return 
+    });
+    console.log(typeof e.target.textContent);
+  };
+
+  // show output
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="calcWidth">
+        <FormInput display={display} />
+        <CalcButton handleClick={handleClick} />
+      </div>
     </div>
   );
 }
