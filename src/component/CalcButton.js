@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 
-export const CalcButton = ({ handleClick }) => {
+export const CalcButton = ({ handleClick,addNumber }) => {
   //   const btnData = [".", 0, "=", 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   return (
@@ -12,7 +12,7 @@ export const CalcButton = ({ handleClick }) => {
       <div className="calculator">
         <div className="func-btn">
           <Button style={`btn num-bg`} text={"DEL"} />
-          <Button style={`btn num-bg`} text={"+"} />
+          <Button style={`btn num-bg`} text={"+"} addNumber={addNumber} />
           <Button style={`btn num-bg`} text={"x"} />
           <Button style={`btn num-bg`} text={"-"} />
           <Button style={`btn num-bg`} text={"+"} />
