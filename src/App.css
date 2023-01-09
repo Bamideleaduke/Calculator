@@ -15,7 +15,9 @@ body{
   justify-content: right;
 }
 .display {
-  color: #f5deb3;
+  /* color: #f5deb3; */
+  color: #112011;
+  font-weight: 500;
   font-size: 3rem;
   padding: 0 1rem;
 }

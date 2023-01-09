@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 
 const FormInput = ({ display }) => {
-  const [num, setnum] = useState(0)
+  // const [num, setnum] = useState(0)
   
   return (
     <div>
