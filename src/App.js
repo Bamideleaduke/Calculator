@@ -54,8 +54,8 @@ function App() {
     setOperator(() => {
       switch (operator) {
         case "plus":
-          setDisplay((prev) => {
-            let total = prev + numRight;
+          setDisplay(() => {
+            let total = numLeft + numRight;
             return total;
           });
           break;
